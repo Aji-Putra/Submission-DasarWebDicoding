@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kuliner Pulau Jawa</title>
+
+    
+
+    <!-- My Own Styles -->
+    <link rel="stylesheet" href="asset/style/style.css" />
+
+    <!-- Link Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <!-- GOgle FOnt-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&display=swap" rel="stylesheet">
+
+
+    
+  </head>
+
+  <body>
+    <!-- Header Content-->
+    <header >
+      <div class="header-item">
+        <img src="asset/image/Logo.png" alt="" class="logo">
+        <br>
+        <strong>Mari Mengenal Kuliner Pulau Jawa</strong>
+      </div>
+        <nav>
+          <ul>
+            <li class="Jabar" >
+                <a href="#JawaBarat" id="jbr">Jawa Barat</a> 
+            </li>
+            <li  >
+              <a href="#JawaTengah" id="jtg">Jawa Tengah</a>
+            </li>
+            <li>
+              <a href="#JawaTimur" id="jtm">Jawa Timur</a>
+            </li>
+          </ul>
+        </nav>
+    </header>
+<!--end of Header-->
+
+    <main>
+      <!-- Article Content -->
+      <div id="content">
+        <article id="JawaBarat" class="card">
+          <h1>Jawa Barat</h1>
+                <hr>
+                <div class="card">
+                    <h3>Soto Bandung</h2>
+                    <img src="asset/image/soto-bandung.jpeg" alt="" class="gambar">
+                    <p>Soto Bandung adalah soto khas Bandung, Jawa Barat. Sepintas, soto yang berbahan dasar daging sapi (biasanya bagian tetelan atau has dalam) ini hampir sama dengan jenis soto yang lain, tetapi yang membuatnya berbeda adalah adanya tambahan lobak, tomat, dan kedelai goreng di dalamnya.</p>
+                </div>
+                <div class="card">
+                  <h3>Kue Balok</h3>
+                  <img src="asset/image/Kuebalok.jpg" alt="" class="gambar">
+                  <p>Kue balok merupakan salah satu makanan khas Bandung yang masih digemari. Kue yang serupa kue pukis ini digemari lantaran tekstur kuenya yang begitu lembut. Varian rasa yang dimilikinya pun beragam, mulai dari cokelat hingga keju.</p>
+                </div>
+        </article>
+
+        <article id="JawaTengah" class="card">
+          <h1>Jawa Tengah</h1>
+                <hr>
+                <div class="card">
+                    <h3>Soto Sokaraja</h2>
+                    <img src="asset/image/soto-sokaraja.jpg" alt="" class="gambar">
+                    <p>Sajian Sroto Sokaraja ini dalam proses pembuatannya hampir sama dengan soto pada umumnya. Kuah yang digunakan terbuat dari kaldu daging sapi sandung lamur yang dimasak dengan bumbu khusus sehingga memberikan cita rasa yang khas. Selain itu, kuah pada Sroto Sokaraja ini cenderung lebih bening dan berwarna kekuningan.</p>
+                </div>
+        </article>
+
+        <article id="JawaTimur" class="card">
+          <h1>Jawa Timur</h1>
+                <hr>
+                <div class="card">
+                    <h3>Rawon</h3>
+                    <img src="asset/image/rawon.jpeg" alt="" class="gambar">
+                    <p>Rawon (Aksara Jawa:ꦫꦮꦺꦴꦤ꧀) adalah masakan Indonesia berasal dari Ponorogo yang berupa sup daging berkuah hitam dengan campuran bumbu khas yang menggunakan kluwek, Makanan ini telah berusia lebih 1.000 Tahun.</p>
+                </div>
+        </article>
+      </div>
+      <!--end of Article -->
+
+
+      <!-- Asside Content -->
+      <aside>
+        <article class="profile card" >
+          <header>
+            <h2>Kuliner Pulau Jawa</h2>
+            <Strong>Wonderfull Indonesia</Strong>
+            <figure>
+              <img src="asset/image/WI-logo.png" class="logo-asside"/>
+            </figure>
+          </header>
+          <hr>
+          <p>Ayo Kuliner Di Pulau Jawa</p>
+          <strong>Jawa Pride!!!</strong>
+        </article>
+      </aside>
+    </main>
+
+    <!--Footer Content-->
+    <footer>
+      <div class="">
+        <p>Mari berkulineran di pulau Jawa</p>
+        <p>Bisa Hubungi Kami di</p>
+      </div>
+      <div class="icon">
+ 
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+      <hr>
+      <p>CopyRigh@KulinerPulaiJawa</p>
+    </footer>
+  </body>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script>
+      $(document).ready(function(){
+        if($( window ).width() < 580 ){
+          const jabar =  document.getElementById('jbr');
+          jabar.innerText = 'Jabar';
+        }else{
+          const jabar =  document.getElementById('jbr');
+          jabar.innerText = 'Jawa Barat';
+        }
+      });
+      $(document).ready(function(){
+        if($( window ).width() < 580 ){
+          const jabar =  document.getElementById('jtg');
+          jabar.innerText = 'Jateng';
+        }else{
+          const jabar =  document.getElementById('jtg');
+          jabar.innerText = 'Jawa Tengah';
+        }
+      });
+      $(document).ready(function(){
+        if($( window ).width() < 580 ){
+          const jabar =  document.getElementById('jtm');
+          jabar.innerText = 'Jatim';
+        }else{
+          const jabar =  document.getElementById('jtm');
+          jabar.innerText = 'Jawa Timur';
+        }
+      });
+      </script>
+</html>

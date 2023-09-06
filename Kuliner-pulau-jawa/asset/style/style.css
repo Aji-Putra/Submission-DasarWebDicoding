@@ -1,0 +1,161 @@
+html {
+  scroll-padding-top: 100px;
+  scroll-behavior: smooth;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Dosis", arial;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: inline;
+}
+
+.logo {
+  width: 300px;
+}
+
+.logo-asside {
+  width: 170px;
+}
+nav {
+  border-radius: 7px;
+  background-color: rgb(186, 124, 236);
+  padding: 5px;
+  position: sticky;
+  top: 0;
+}
+
+nav ul {
+  justify-content: center;
+  padding-inline: 4rem;
+  display: flex;
+  gap: 2rem;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 999px;
+  transition: all 0.2s ease-in-out;
+}
+
+nav a:hover {
+  background-color: #5e2991;
+  color: white;
+}
+
+main {
+  padding: 20px;
+
+  display: flex;
+  gap: 1.5rem;
+}
+
+#content {
+  flex: 5;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem 2rem;
+}
+
+aside {
+  flex: 1;
+  text-align: center;
+}
+
+h2 {
+  color: #5e2991;
+}
+
+h1 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: #5e2991;
+}
+
+footer {
+  text-align: center;
+  font-size: 15px;
+  opacity: 0.75;
+  padding: 5px;
+  color: #fff;
+  background-color: #3e1961;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: rgb(213, 206, 228);
+}
+
+.icon a {
+  font-size: 30px;
+  color: rgb(224, 212, 231);
+  text-decoration: none;
+  transition: all 0.1s ease-in-out;
+  margin-left: 15px;
+}
+
+.header-item {
+  background-color: #6f2eac;
+  text-align: center;
+  font-size: 40px;
+}
+
+.gambar {
+  width: 100%;
+  max-height: 400px;
+  border-radius: 45px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card {
+  box-shadow: 0 2px 8px 5px rgba(147, 24, 163, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  main {
+    flex-flow: column nowrap;
+  }
+
+  main aside {
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    justify-content: center;
+  }
+  nav li {
+    justify-content: center;
+    text-align: center;
+  }
+
+  main aside {
+    align-self: stretch;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  nav a {
+    display: flex;
+  }
+
+}
